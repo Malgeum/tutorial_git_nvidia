@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>caculator</title>
+</head>
+<body>
+    <h1>Simple website</h1>
+    <form method="post">
+        <input type="number" name="number1" step="any" placeholder="first number" required>
+        <input type="number" name="number2" step="any" placeholder="second number" required>
+        <select name="operation">
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiple">Multiple</option>
+            <option value="devide">Devide</option>
+        </select>
+        <button type="submit">Calculate</button>
+    </form>
+    {% if result is not none %}
+    <h2>Result : {{ result }}</h2>
+    {% endif %}
+
+
+</body>
+</html>
