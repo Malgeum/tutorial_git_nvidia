@@ -1,5 +1,7 @@
 from flask import Flask, request, render_template
 
+# check a commit
+
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
